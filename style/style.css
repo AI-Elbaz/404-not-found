@@ -37,7 +37,9 @@
 
 .content img {
     width: 287px;
+    transform: translate(0, -50px);
     margin-bottom: 60px;
+    animation: mymove 5s infinite;
 }
 
 .content .description {
@@ -91,6 +93,12 @@ footer a:link,
 footer a:visited {
     color: #BDBDBD;
     font-weight: bold;
+}
+
+@keyframes mymove {
+    0% {transform: translate(0, -50px)}
+    50% {transform: translate(0, 30px)}
+    100% {transform: translate(0, -50px)}
 }
 
 @media only screen and (min-width: 720px) {
