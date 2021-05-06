@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    padding: 20px 24px;
+    color: #333333;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Inconsolata', sans-serif;
+    letter-spacing: -0.08em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content img {
+    width: 287px;
+    margin-bottom: 60px;
+}
+
+.content .description {
+    padding: 0 24px;
+    font-family: 'Space Mono', sans-serif;
+}
+
+.description h1,
+.description p {
+    line-height: 1.48em;
+    letter-spacing: -0.035em;
+}
+
+.description h1 {
+    font-size: 48px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.description p {
+    font-size: 24px;
+    color: #4F4F4F;
+    font-weight: normal;
+}
+
+.description .btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333333;
+    font-size: 14px;
+    line-height: 1.48em;
+    padding: 23px 43px;
+    font-family: 'Space Mono';
+    text-transform: uppercase;
+    margin-top: 65px;
+    display: block;
+    width: fit-content;
+}
+
+footer {
+    color: #BDBDBD;
+    font-size: 14px;
+    text-align: center;
+    padding: 24px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+    color: #BDBDBD;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 720px) {
+    .title {
+        padding: 40px 77px;
+    }
+
+    .description h1 {
+        font-size: 64px;
+    }
+
+    .description p {
+        font-size: 24px;
+    }
+
+    .content img{
+        width: 540px;
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    .content {
+        justify-content: space-around;
+    }
+
+    .content .description {
+        width: 50%;
+    }
+}
