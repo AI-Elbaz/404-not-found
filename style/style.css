@@ -36,8 +36,9 @@
 }
 
 .content img {
-    width: 287px;
-    transform: translate(0, -50px);
+    width: 70%;
+    /* width: 287px; */
+    transform: translate(0, -30px);
     margin-bottom: 60px;
     animation: mymove 5s infinite;
 }
@@ -78,6 +79,13 @@
     margin-top: 65px;
     display: block;
     width: fit-content;
+    border: 2px solid #333333;
+    transition: 0.3s ease-in-out;
+}
+
+.description .btn:hover {
+    color: #333333;
+    background-color: #ffffff;
 }
 
 footer {
@@ -96,12 +104,12 @@ footer a:visited {
 }
 
 @keyframes mymove {
-    0% {transform: translate(0, -50px)}
+    0% {transform: translate(0, -30px)}
     50% {transform: translate(0, 30px)}
-    100% {transform: translate(0, -50px)}
+    100% {transform: translate(0, -30px)}
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 769px) {
     .title {
         padding: 40px 77px;
     }
@@ -119,7 +127,7 @@ footer a:visited {
     }
 }
 
-@media only screen and (min-width: 1120px) {
+@media only screen and (min-width: 1025px) {
     .content {
         justify-content: space-around;
     }
